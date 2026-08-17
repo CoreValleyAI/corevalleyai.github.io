@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/corevalley-design-system-9d3a1a52-389d-42dc-ab1e-9ec130e21045/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/corevalley-design-system-9d3a1a52-389d-42dc-ab1e-9ec130e21045/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/corevalley-design-system-9d3a1a52-389d-42dc-ab1e-9ec130e21045/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/corevalley-design-system-9d3a1a52-389d-42dc-ab1e-9ec130e21045/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/corevalley-design-system-9d3a1a52-389d-42dc-ab1e-9ec130e21045/tokens/base.css">
+  <link rel="stylesheet" href="_ds/corevalley-design-system-9d3a1a52-389d-42dc-ab1e-9ec130e21045/styles.css">
+  <script src="_ds/corevalley-design-system-9d3a1a52-389d-42dc-ab1e-9ec130e21045/_ds_bundle.js"></script>
+  <style>
+    html, body { margin: 0; padding: 0; background: #05080D; }
+    a { color: #4ADE80; text-decoration: none; }
+    a:hover { color: #16A34A; }
+    @keyframes cv-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+  </style>
+</helmet>
+<div style="min-height: 100vh; background: #05080D; color: #E8ECEF; font-family: 'Manrope', sans-serif; display: flex; flex-direction: column; position: relative; overflow: hidden;">
+  <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 30vh; opacity: 0.18; pointer-events: none; background-image: url('assets/ridgeline.svg'); background-size: cover; background-position: center top; background-repeat: no-repeat; -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 45%, rgba(0,0,0,0.5) 100%); mask-image: linear-gradient(to bottom, transparent 0%, black 45%, rgba(0,0,0,0.5) 100%);"></div>
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 28px 48px; position: relative; z-index: 1;">
+    <a href="index.html" style="display: flex; align-items: center; gap: 10px;">
+      <img src="assets/cv-brandmark.svg" alt="" style="height: 28px; display: block;">
+      <img src="assets/cv-wordmark-green.svg" alt="corevalley" style="height: 20px; display: block;">
+    </a>
+    <a href="index.html" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;">&lt; back to home</a>
+  </header>
+  <main style="flex: 1; position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; padding: 48px 24px 96px;">
+    <div style="width: 100%; max-width: 760px; display: flex; flex-direction: column; gap: 72px;">
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #4ADE80;">&gt; about corevalley</span>
+        <h1 style="margin: 0; font-weight: 700; font-size: clamp(34px, 5vw, 56px); line-height: 1.05; letter-spacing: -0.02em; color: #E8ECEF;">GPUs on demand, powered by the Himalayas.</h1>
+        <p style="margin: 0; font-weight: 300; font-size: 18px; line-height: 1.6; color: #9CA3AF; text-wrap: pretty;">CoreValley is Nepal's first hydro-powered GPU cloud. Spin up a notebook or a Kubernetes cluster in minutes — clean, affordable, and built for the region's AI builders.</p>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #6B7280;">$ think colab, but on nepali hydro<span style="display: inline-block; width: 8px; height: 15px; background: #4ADE80; margin-left: 6px; vertical-align: text-bottom; animation: cv-blink 1s step-end infinite;"></span></span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #4ADE80;">&gt; why we exist</span>
+        <p style="margin: 0; font-weight: 300; font-size: 16px; line-height: 1.7; color: #9CA3AF; text-wrap: pretty;">AI runs on compute, and compute runs on power. Nepal has some of the cleanest, most abundant hydropower in the world — yet teams across the region still rent GPUs from data centers a continent away, at prices and latencies set elsewhere.</p>
+        <p style="margin: 0; font-weight: 300; font-size: 16px; line-height: 1.7; color: #9CA3AF; text-wrap: pretty;">We're changing that. CoreValley puts high-performance GPUs where the clean energy already is, so builders in Nepal and South Asia can train, fine-tune, and serve AI models on infrastructure that's local, green, and within reach.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #4ADE80;">&gt; what we're building</span>
+        <p style="margin: 0; font-weight: 300; font-size: 16px; line-height: 1.7; color: #9CA3AF;">Two ways to get compute, one platform:</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+          <div style="background: #0B0F17; border: 1px solid rgba(232,236,239,0.10); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 700; color: #E8ECEF;"><span style="color: #4ADE80;">$</span> gpu-as-a-service</span>
+            <p style="margin: 0; font-weight: 300; font-size: 14px; line-height: 1.6; color: #9CA3AF;">Open a browser, pick a GPU, start coding. Hosted notebooks and on-demand instances for students, researchers, and startups — no setup, no hardware, pay for what you use.</p>
+          </div>
+          <div style="background: #0B0F17; border: 1px solid rgba(232,236,239,0.10); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 700; color: #E8ECEF;"><span style="color: #4ADE80;">$</span> kubernetes-as-a-service</span>
+            <p style="margin: 0; font-weight: 300; font-size: 14px; line-height: 1.6; color: #9CA3AF;">Managed GPU clusters for teams that need to train at scale or run models in production. Bring your containers; we handle the infrastructure.</p>
+          </div>
+        </div>
+        <p style="margin: 0; font-weight: 300; font-size: 15px; line-height: 1.6; color: #6B7280;">Both run on 100% renewable hydropower, with transparent pricing and support in your time zone.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #4ADE80;">&gt; what we stand for</span>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+          <div style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid rgba(74,222,128,0.35); padding-top: 14px;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #E8ECEF;">green by design</span>
+            <p style="margin: 0; font-weight: 300; font-size: 14px; line-height: 1.6; color: #9CA3AF;">Every GPU-hour is powered by hydro, not diesel or coal.</p>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid rgba(74,222,128,0.35); padding-top: 14px;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #E8ECEF;">simple by default</span>
+            <p style="margin: 0; font-weight: 300; font-size: 14px; line-height: 1.6; color: #9CA3AF;">From notebook to production cluster without leaving the platform.</p>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid rgba(74,222,128,0.35); padding-top: 14px;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #E8ECEF;">local by choice</span>
+            <p style="margin: 0; font-weight: 300; font-size: 14px; line-height: 1.6; color: #9CA3AF;">Built in Nepal, for the region — low latency, real people, real support.</p>
+          </div>
+        </div>
+      </div>
+      <div style="background: #0B0F17; border: 1px solid rgba(232,236,239,0.10); border-left: 1.5px solid #4ADE80; border-radius: 6px; padding: 32px 36px; display: flex; flex-direction: column; gap: 14px;">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #4ADE80;">&gt; a note from the founder</span>
+        <p style="margin: 0; font-weight: 300; font-size: 17px; line-height: 1.7; color: #E8ECEF; text-wrap: pretty;">Nepal exports electricity and imports intelligence. We think it should be the other way round. CoreValley is our bet that world-class AI infrastructure can be built here — and that the people who build with it can be here too.</p>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #6B7280;">— abhigyan golchha, founder</span>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center; padding: 24px 0 0;">
+        <h2 style="margin: 0; font-weight: 700; font-size: clamp(24px, 3vw, 34px); line-height: 1.05; letter-spacing: -0.01em; color: #E8ECEF;">We're launching soon.</h2>
+        <p style="margin: 0; max-width: 480px; font-weight: 300; font-size: 15px; line-height: 1.6; color: #9CA3AF;">Leave your email and be first to get access, or reach out if you'd like to partner with us.</p>
+        <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+          <div style="display: flex; gap: 10px; width: 100%; max-width: 440px;">
+            <input value="{{ email }}" onChange="{{ onEmailChange }}" onKeyDown="{{ onEmailKey }}" type="email" placeholder="you@company.com" style="flex: 1; background: #0B0F17; border: 1px solid rgba(232,236,239,0.14); border-radius: 6px; padding: 12px 16px; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #E8ECEF; outline: none;" style-focus="border: 1px solid #4ADE80; box-shadow: 0 0 0 3px rgba(74,222,128,0.15);">
+            <button onClick="{{ onNotify }}" style="background: #4ADE80; color: #05080D; border: none; border-radius: 6px; padding: 12px 22px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; cursor: pointer; transition: background 160ms cubic-bezier(0.2,0,0.2,1);" style-hover="background: #16A34A;">notify me</button>
+          </div>
+        </sc-if>
+        <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #4ADE80; border: 1px solid rgba(74,222,128,0.35); border-radius: 6px; padding: 12px 24px;">$ subscribed — we'll ping you at launch</div>
+        </sc-if>
+        <a href="mailto:hello@corevalley.ai" style="font-family: 'JetBrains Mono', monospace; font-size: 13px;">hello@corevalley.ai</a>
+      </div>
+    </div>
+  </main>
+  <footer style="display: flex; align-items: center; justify-content: space-between; padding: 20px 48px; position: relative; z-index: 1; border-top: 1px solid rgba(232,236,239,0.10); background: rgba(5,8,13,0.7);">
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #9CA3AF;">&gt; corevalley_ · kathmandu, nepal</span>
+    <a href="index.html" style="font-family: 'JetBrains Mono', monospace; font-size: 13px;">home</a>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { email: "", submitted: false };
+  renderVals() {
+    return {
+      email: this.state.email,
+      submitted: this.state.submitted,
+      notSubmitted: !this.state.submitted,
+      onEmailChange: (e) => this.setState({ email: e.target.value }),
+      onEmailKey: (e) => { if (e.key === "Enter" && this.state.email.trim()) this.setState({ submitted: true }); },
+      onNotify: () => { if (this.state.email.trim()) this.setState({ submitted: true }); },
+    };
+  }
+}
+</script>
+</body>
+</html>

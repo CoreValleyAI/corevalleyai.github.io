@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/corevalley-design-system-9d3a1a52-389d-42dc-ab1e-9ec130e21045/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/corevalley-design-system-9d3a1a52-389d-42dc-ab1e-9ec130e21045/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/corevalley-design-system-9d3a1a52-389d-42dc-ab1e-9ec130e21045/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/corevalley-design-system-9d3a1a52-389d-42dc-ab1e-9ec130e21045/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/corevalley-design-system-9d3a1a52-389d-42dc-ab1e-9ec130e21045/tokens/base.css">
+  <link rel="stylesheet" href="_ds/corevalley-design-system-9d3a1a52-389d-42dc-ab1e-9ec130e21045/styles.css">
+  <script src="_ds/corevalley-design-system-9d3a1a52-389d-42dc-ab1e-9ec130e21045/_ds_bundle.js"></script>
+  <style>
+    html, body { margin: 0; padding: 0; background: #05080D; }
+    a { color: #4ADE80; text-decoration: none; }
+    a:hover { color: #16A34A; }
+    @keyframes cv-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+  </style>
+</helmet>
+<div style="min-height: 100vh; background: #05080D; color: #E8ECEF; font-family: 'Manrope', sans-serif; display: flex; flex-direction: column; position: relative; overflow: hidden;">
+  <sc-if value="{{ showRidgeline }}" hint-placeholder-val="{{ true }}">
+  <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 34vh; opacity: 0.22; pointer-events: none; background-image: url('assets/ridgeline.svg'); background-size: cover; background-position: center top; background-repeat: no-repeat; -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 45%, rgba(0,0,0,0.5) 100%); mask-image: linear-gradient(to bottom, transparent 0%, black 45%, rgba(0,0,0,0.5) 100%);"></div>
+  </sc-if>
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 28px 48px; position: relative; z-index: 1;">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="assets/cv-brandmark.svg" alt="" style="height: 28px; display: block;">
+      <img src="assets/cv-wordmark-green.svg" alt="corevalley" style="height: 20px; display: block;">
+    </div>
+    <div style="display: flex; align-items: center; gap: 28px;">
+      <a href="About.dc.html" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;">about</a>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #6B7280;">status: pre-launch</span>
+    </div>
+  </header>
+  <main style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px 24px 120px; position: relative; z-index: 1; text-align: center;">
+    <div style="display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(74,222,128,0.35); border-radius: 999px; padding: 6px 14px; margin-bottom: 32px;">
+      <span style="width: 7px; height: 7px; border-radius: 50%; background: #4ADE80; box-shadow: 0 0 8px rgba(74,222,128,0.8);"></span>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #4ADE80;">launching q4 2026</span>
+    </div>
+    <h1 style="margin: 0 0 20px; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: clamp(38px, 6vw, 72px); line-height: 1.05; letter-spacing: -0.02em; color: #E8ECEF;">&gt; coming soon<span style="display: inline-block; width: 0.55em; height: 1em; background: #4ADE80; margin-left: 10px; vertical-align: text-bottom; animation: cv-blink 1s step-end infinite; box-shadow: 0 0 18px rgba(74,222,128,0.6);"></span></h1>
+    <p style="margin: 0 0 32px; max-width: 520px; font-weight: 300; font-size: 17px; line-height: 1.6; color: #9CA3AF; text-wrap: pretty;">Compute that runs on rivers, not coal. Hydro-powered GPU infrastructure in the Himalayas.</p>
+    <div style="width: 100%; max-width: 520px; margin: 0 0 40px; background: #0B0F17; border: 1px solid rgba(232,236,239,0.12); border-radius: 6px; text-align: left; overflow: hidden;">
+      <div style="display: flex; align-items: center; gap: 6px; padding: 10px 14px; border-bottom: 1px solid rgba(232,236,239,0.08);">
+        <span style="width: 9px; height: 9px; border-radius: 50%; background: rgba(232,236,239,0.15);"></span>
+        <span style="width: 9px; height: 9px; border-radius: 50%; background: rgba(232,236,239,0.15);"></span>
+        <span style="width: 9px; height: 9px; border-radius: 50%; background: rgba(232,236,239,0.15);"></span>
+        <span style="margin-left: 8px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #6B7280;">np-ktm-1</span>
+      </div>
+      <div style="padding: 16px 18px; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 1.8;">
+        <div style="color: #E8ECEF;"><span style="color: #4ADE80;">$</span> {{ typedText }}<span style="display: inline-block; width: 8px; height: 15px; background: #4ADE80; vertical-align: text-bottom; animation: cv-blink 1s step-end infinite;"></span></div>
+        <sc-if value="{{ typedDone }}" hint-placeholder-val="{{ false }}">
+          <div style="color: #6B7280;">provisioning hydro-powered cluster…</div>
+          <div style="color: #4ADE80;">ok — eta q4 2026</div>
+        </sc-if>
+      </div>
+    </div>
+    <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; gap: 10px; width: 100%; max-width: 440px;">
+        <input value="{{ email }}" onChange="{{ onEmailChange }}" onKeyDown="{{ onEmailKey }}" type="email" placeholder="you@company.com" style="flex: 1; background: #0B0F17; border: 1px solid rgba(232,236,239,0.14); border-radius: 6px; padding: 12px 16px; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #E8ECEF; outline: none;" style-focus="border: 1px solid #4ADE80; box-shadow: 0 0 0 3px rgba(74,222,128,0.15);">
+        <button onClick="{{ onNotify }}" style="background: #4ADE80; color: #05080D; border: none; border-radius: 6px; padding: 12px 22px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; cursor: pointer; transition: background 160ms cubic-bezier(0.2,0,0.2,1);" style-hover="background: #16A34A;">notify me</button>
+      </div>
+    </sc-if>
+    <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #4ADE80; border: 1px solid rgba(74,222,128,0.35); border-radius: 6px; padding: 12px 24px;">$ subscribed — we'll ping you at launch</div>
+    </sc-if>
+  </main>
+  <footer style="display: flex; align-items: center; justify-content: space-between; padding: 20px 48px; position: relative; z-index: 1; border-top: 1px solid rgba(232,236,239,0.10); background: rgba(5,8,13,0.7);">
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #9CA3AF;">&gt; corevalley_ · kathmandu, nepal</span>
+    <a href="mailto:hello@corevalley.ai" style="font-family: 'JetBrains Mono', monospace; font-size: 13px;">hello@corevalley.ai</a>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showRidgeline&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;}}">
+class Component extends DCLogic {
+  state = { email: "", submitted: false, typed: 0 };
+  componentDidMount() {
+    const cmd = "cv deploy --gpu [classified] --region np-ktm-1 --power hydro";
+    this.cmd = cmd;
+    this.timer = setInterval(() => {
+      this.setState(s => {
+        if (s.typed >= cmd.length) { clearInterval(this.timer); return null; }
+        return { typed: s.typed + 1 };
+      });
+    }, 45);
+  }
+  componentWillUnmount() { clearInterval(this.timer); }
+  renderVals() {
+    return {
+      email: this.state.email,
+      submitted: this.state.submitted,
+      notSubmitted: !this.state.submitted,
+      showRidgeline: this.props.showRidgeline ?? true,
+      typedText: (this.cmd || "").slice(0, this.state.typed),
+      typedDone: !!this.cmd && this.state.typed >= this.cmd.length,
+      onEmailChange: (e) => this.setState({ email: e.target.value }),
+      onEmailKey: (e) => { if (e.key === "Enter" && this.state.email.trim()) this.setState({ submitted: true }); },
+      onNotify: () => { if (this.state.email.trim()) this.setState({ submitted: true }); },
+    };
+  }
+}
+</script>
+</body>
+</html>
