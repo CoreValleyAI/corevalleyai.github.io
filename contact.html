@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — CoreValley AI</title>
+  <meta name="description" content="Contact CoreValley AI for early access, quotes or partnership. Based in Kathmandu, Nepal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="CoreValley AI">
+        <span>corevalley</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Platform</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="btn btn-primary">Get Early Access</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="badge">Contact</div>
+      <h1>Let’s discuss your workloads</h1>
+      <p>Whether you need a single GPU for research or capacity planning for production, the team in Kathmandu is ready to help.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Reach us directly</h3>
+          <p style="color:var(--text-muted);margin-bottom:28px;">
+            Prefer a conversation first? Email or message us. We respond during Nepal business hours and often beyond.
+          </p>
+
+          <div class="contact-item">
+            <div class="icon">📧</div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:info@corevalley.ai">info@corevalley.ai</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Kathmandu Valley, Nepal</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon">🕐</div>
+            <div>
+              <h4>Support hours</h4>
+              <p>Nepal Standard Time. Technical questions welcome.</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon">💬</div>
+            <div>
+              <h4>What to include</h4>
+              <p>Model type, approximate dataset size, expected GPU hours, and whether you need Lab, Workspace or inference.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3 style="margin-bottom:6px;">Request early access</h3>
+          <p style="color:var(--text-muted);font-size:0.95rem;margin-bottom:24px;">Fill the form and we will follow up with next steps and pricing if relevant.</p>
+
+          <!--email_off-->
+          <form id="contactForm" action="https://formsubmit.co/info&#64;corevalley.ai" method="POST" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
+            <input type="hidden" name="_method" value="POST">
+            <input type="hidden" name="_subject" value="CoreValley AI — new website enquiry">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="contact.html?sent=1">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="you@organization.com">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="org">Organization</label>
+                <input type="text" id="org" name="organization" placeholder="University / Company / Startup">
+              </div>
+              <div class="form-group">
+                <label for="interest">Primary interest</label>
+                <select id="interest" name="interest">
+                  <option value="ai-lab">AI Lab (research / learning)</option>
+                  <option value="workspace">GPU Workspace (training / fine-tuning)</option>
+                  <option value="inference">Inference / Endpoints</option>
+                  <option value="custom">Custom / Enterprise</option>
+                  <option value="other">Just exploring</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="workload">Tell us about your use case</label>
+              <textarea id="workload" name="message" required placeholder="Models, data size, timeline, special requirements..."></textarea>
+            </div>
+
+            <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+          </form>
+          <!--email_on-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Quick answers</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Can I pay in NPR?</h3>
+          <p>Yes. All pricing is quoted and settled in Nepali Rupees. We accept eSewa, Khalti, bank transfer and corporate invoices.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Does data stay in Nepal?</h3>
+          <p>Yes. Compute and storage are located in Nepal. The platform is designed for organisations that cannot send data abroad.</p>
+        </div>
+        <div class="feature-card">
+          <h3>How quickly can I start?</h3>
+          <p>After we align on requirements and account setup, most users can launch environments within minutes once capacity is allocated.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Do you support academic use?</h3>
+          <p>Yes. AI Lab is specifically designed for universities, researchers and teaching with simplified access.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="CoreValley" style="height:36px">
+            <span>corevalley</span>
+          </a>
+          <p>Nepal’s sovereign AI cloud. Train, fine-tune and deploy on NVIDIA GPUs hosted in Kathmandu — billed in NPR with local support.</p>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="services.html">AI Lab</a></li>
+            <li><a href="services.html">GPU Workspace</a></li>
+            <li><a href="services.html">Inference</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://www.linkedin.com/company/corevalleyai/jobs/">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@corevalley.ai">info@corevalley.ai</a></li>
+            <li>Kathmandu, Nepal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 CoreValley AI. All rights reserved.</span>
+        <span>Hosted in Nepal 🇳🇵</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
